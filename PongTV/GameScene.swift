@@ -16,9 +16,17 @@ var leftPaddle = SKSpriteNode()
 var rightPaddle = SKSpriteNode()
     
     override func didMove(to view: SKView) {
-      ball = self.childNode(withName: "ball")
-    leftPaddle = self.childNode(withName: "leftPaddle")
-    rightPaddle = self.childNode(withName: "rightPaddle")
+        
+        ball = self.childNode(withName: "ball") as! SKSpriteNode
+        leftPaddle = self.childNode(withName: "leftPaddle") as! SKSpriteNode
+        rightPaddle = self.childNode(withName: "rightPaddle") as! SKSpriteNode
+        
+        ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+        
+        let border = SKPhysicsBody(edgeLoopFrom: self.frame)
+        border.friction = 0
+        border.restitution = 1
+        self.physicsBody = border
     }
     
     override func update(_ currentTime: TimeInterval) {
