@@ -30,6 +30,8 @@ var rightPaddle = SKSpriteNode()
     }
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+      
+        rightPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 1.0))
+     
     }
 }
