@@ -9,11 +9,14 @@
 import SpriteKit
 import GameplayKit
 
+
 class GameScene: SKScene {
     
 var ball = SKSpriteNode()
 var leftPaddle = SKSpriteNode()
 var rightPaddle = SKSpriteNode()
+    
+var score = [Int]()
     
     override func didMove(to view: SKView) {
         
@@ -31,7 +34,12 @@ var rightPaddle = SKSpriteNode()
     
     override func update(_ currentTime: TimeInterval) {
       
-        rightPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 1.0))
+        rightPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 0.3))
+        
+        
      
     }
-}
+    
+    
+    }
+
