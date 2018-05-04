@@ -9,11 +9,24 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameViewController: UIViewController {
+    var musicEffect: AVAudioPlayer = AVAudioPlayer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let musicFile = Bundle.main.path(forResource: "retro", ofType: ".mp3")
+        
+        do {
+            try musicEffect = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile!))
+        }
+        catch {
+            print(error)
+        }
+        
+    
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
@@ -35,5 +48,14 @@ class GameViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }
