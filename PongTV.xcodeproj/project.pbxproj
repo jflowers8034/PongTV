@@ -14,6 +14,8 @@
 		1AA8A9B9209A1B7A00DD9742 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8A9B8209A1B7A00DD9742 /* GameViewController.swift */; };
 		1AA8A9BC209A1B7A00DD9742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8A9BA209A1B7A00DD9742 /* Main.storyboard */; };
 		1AA8A9BE209A1B7E00DD9742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */; };
+		4013E67D209CC08A0099109A /* CustomFont-Blacklisted.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4013E67B209CC08A0099109A /* CustomFont-Blacklisted.ttf */; };
+		4013E67E209CC08A0099109A /* CustomFont-CrackedCode.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4013E67C209CC08A0099109A /* CustomFont-CrackedCode.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1AA8A9BB209A1B7A00DD9742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AA8A9BF209A1B7E00DD9742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4013E67B209CC08A0099109A /* CustomFont-Blacklisted.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CustomFont-Blacklisted.ttf"; path = "../../../Downloads/CustomFont-Blacklisted.ttf"; sourceTree = "<group>"; };
+		4013E67C209CC08A0099109A /* CustomFont-CrackedCode.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CustomFont-CrackedCode.ttf"; path = "../../../Downloads/CustomFont-CrackedCode.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				1AA8A9B0209A1B7A00DD9742 /* AppDelegate.swift */,
+				4013E67B209CC08A0099109A /* CustomFont-Blacklisted.ttf */,
+				4013E67C209CC08A0099109A /* CustomFont-CrackedCode.ttf */,
 				1AA8A9B2209A1B7A00DD9742 /* GameScene.sks */,
 				1AA8A9B4209A1B7A00DD9742 /* Actions.sks */,
 				1AA8A9B6209A1B7A00DD9742 /* GameScene.swift */,
@@ -128,7 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4013E67E209CC08A0099109A /* CustomFont-CrackedCode.ttf in Resources */,
 				1AA8A9BC209A1B7A00DD9742 /* Main.storyboard in Resources */,
+				4013E67D209CC08A0099109A /* CustomFont-Blacklisted.ttf in Resources */,
 				1AA8A9B3209A1B7A00DD9742 /* GameScene.sks in Resources */,
 				1AA8A9BE209A1B7E00DD9742 /* Assets.xcassets in Resources */,
 				1AA8A9B5209A1B7A00DD9742 /* Actions.sks in Resources */,

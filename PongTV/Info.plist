@@ -26,7 +26,12 @@
 	<array>
 		<string>arm64</string>
 	</array>
-	<key>UIUserInterfaceStyle</key>
-	<string>Automatic</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CustomFont-CrakedCode.ttf</string>
+		<string>CustomFont-Blacklisted.ttf</string>
+	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 </dict>
 </plist>
