@@ -65,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				1AA8A9B0209A1B7A00DD9742 /* AppDelegate.swift */,
+				4013E67B209CC08A0099109A /* CustomFont-Blacklisted.ttf */,
+				4013E67C209CC08A0099109A /* CustomFont-CrackedCode.ttf */,
 				1AA8A9B2209A1B7A00DD9742 /* GameScene.sks */,
 				1AA8A9B4209A1B7A00DD9742 /* Actions.sks */,
 				1AA8A9B6209A1B7A00DD9742 /* GameScene.swift */,
@@ -143,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4013E67E209CC08A0099109A /* CustomFont-CrackedCode.ttf in Resources */,
 				1AA8A9BC209A1B7A00DD9742 /* Main.storyboard in Resources */,
 				686619BC209CC0800063223D /* retro.mp3 in Resources */,
 				1AA8A9B3209A1B7A00DD9742 /* GameScene.sks in Resources */,
@@ -306,6 +309,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
 			name = Debug;
 		};
@@ -325,6 +329,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.2;
 			};
 			name = Release;
 		};
