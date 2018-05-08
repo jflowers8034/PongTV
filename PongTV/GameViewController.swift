@@ -26,6 +26,7 @@ class GameViewController: UIViewController {
             print(error)
         }
         
+        
     
         
         if let view = self.view as! SKView? {
