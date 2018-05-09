@@ -14,8 +14,8 @@
 		1AA8A9B9209A1B7A00DD9742 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8A9B8209A1B7A00DD9742 /* GameViewController.swift */; };
 		1AA8A9BC209A1B7A00DD9742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8A9BA209A1B7A00DD9742 /* Main.storyboard */; };
 		1AA8A9BE209A1B7E00DD9742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */; };
+		40C794CA20A35622000A494A /* Cracked Code.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40C794C920A35622000A494A /* Cracked Code.ttf */; };
 		686619BF209CC0AD0063223D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686619BE209CC0AD0063223D /* AVFoundation.framework */; };
-		68CB179E20A0B6AB00D013E1 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68CB179D20A0B6AA00D013E1 /* click.mp3 */; };
 		68DF2B1720A2063E00237055 /* retro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68DF2B1620A2063E00237055 /* retro.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +29,8 @@
 		1AA8A9BB209A1B7A00DD9742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AA8A9BF209A1B7E00DD9742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C794C920A35622000A494A /* Cracked Code.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cracked Code.ttf"; path = "PongTV/Cracked Code.ttf"; sourceTree = "<group>"; };
 		686619BE209CC0AD0063223D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		68CB179D20A0B6AA00D013E1 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = click.mp3; path = ../../../Downloads/click.mp3; sourceTree = "<group>"; };
-		68DF2B1520A2010600237055 /* CrackedCode.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CrackedCode.ttf; path = ../../../Downloads/CrackedCode.ttf; sourceTree = "<group>"; };
 		68DF2B1620A2063E00237055 /* retro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retro.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +51,7 @@
 			children = (
 				1AA8A9AF209A1B7A00DD9742 /* PongTV */,
 				1AA8A9AE209A1B7A00DD9742 /* Products */,
+				40C794C920A35622000A494A /* Cracked Code.ttf */,
 				686619BD209CC0AC0063223D /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -74,8 +74,6 @@
 				1AA8A9B8209A1B7A00DD9742 /* GameViewController.swift */,
 				68DF2B1620A2063E00237055 /* retro.mp3 */,
 				1AA8A9BA209A1B7A00DD9742 /* Main.storyboard */,
-				68DF2B1520A2010600237055 /* CrackedCode.ttf */,
-				68CB179D20A0B6AA00D013E1 /* click.mp3 */,
 				1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */,
 				1AA8A9BF209A1B7E00DD9742 /* Info.plist */,
 			);
@@ -148,10 +146,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C794CA20A35622000A494A /* Cracked Code.ttf in Resources */,
 				1AA8A9BC209A1B7A00DD9742 /* Main.storyboard in Resources */,
 				68DF2B1720A2063E00237055 /* retro.mp3 in Resources */,
 				1AA8A9B3209A1B7A00DD9742 /* GameScene.sks in Resources */,
-				68CB179E20A0B6AB00D013E1 /* click.mp3 in Resources */,
 				1AA8A9BE209A1B7E00DD9742 /* Assets.xcassets in Resources */,
 				1AA8A9B5209A1B7A00DD9742 /* Actions.sks in Resources */,
 			);
