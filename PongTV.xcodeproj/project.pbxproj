@@ -150,6 +150,7 @@
 				1AA8A9B3209A1B7A00DD9742 /* GameScene.sks in Resources */,
 				1AA8A9BE209A1B7E00DD9742 /* Assets.xcassets in Resources */,
 				1AA8A9B5209A1B7A00DD9742 /* Actions.sks in Resources */,
+				689D4AEC20A35430002F90A7 /* tada.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
