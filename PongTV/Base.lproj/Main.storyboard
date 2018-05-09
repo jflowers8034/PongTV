@@ -46,12 +46,17 @@
                                 </state>
                                 <connections>
                                     <action selector="startButton:" destination="499-42-d0g" eventType="primaryActionTriggered" id="5jJ-J8-QGV"/>
+                                    <action selector="whenButtonPressed:" destination="499-42-d0g" eventType="primaryActionTriggered" id="a6m-7E-Pi2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96196859137055835" green="0.96196859137055835" blue="0.96196859137055835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6df-27-8hi"/>
                     </view>
+                    <connections>
+                        <outlet property="startGameButton" destination="zNx-L7-VoJ" id="o1H-EL-P56"/>
+                        <outlet property="welcomePlayerLabel" destination="a59-Jh-Udy" id="Nue-Jw-DSw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFW-Nd-Df7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
