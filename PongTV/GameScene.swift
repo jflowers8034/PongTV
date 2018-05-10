@@ -15,8 +15,13 @@ class GameScene: SKScene {
 var ball = SKSpriteNode()
 var leftPaddle = SKSpriteNode()
 var rightPaddle = SKSpriteNode()
+
+var scoreLeft = [Int]()
+var scoreRight = [Int]()
+    //scoreLeft.isHidden = true
+    //scoreRight.isHidden = true
     
-var score = [Int]()
+    
     
     override func didMove(to view: SKView) {
         
