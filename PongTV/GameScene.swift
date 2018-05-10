@@ -18,7 +18,7 @@ var rightPaddle = SKSpriteNode()
 
 var score = [Int]()
 
-    
+ 
     
     override func didMove(to view: SKView) {
         
