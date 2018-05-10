@@ -16,10 +16,6 @@ var ball = SKSpriteNode()
 var leftPaddle = SKSpriteNode()
 var rightPaddle = SKSpriteNode()
 
-var scoreLeft = [Int]()
-var scoreRight = [Int]()
-    //scoreLeft.isHidden = true
-    //scoreRight.isHidden = true
     
     
     
@@ -35,6 +31,8 @@ var scoreRight = [Int]()
         border.friction = 0
         border.restitution = 1
         self.physicsBody = border
+     
+    
     }
     
     override func update(_ currentTime: TimeInterval) {
