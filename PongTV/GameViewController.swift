@@ -14,6 +14,13 @@ import AVFoundation
 class GameViewController: UIViewController {
     var musicEffect: AVAudioPlayer = AVAudioPlayer()
 
+    @IBOutlet weak var welcomePlayerLabel: UILabel!
+    @IBOutlet weak var startGameButton: UIButton!
+    
+    @IBAction func whenButtonPressed(_ sender: UIButton) {
+      self.welcomePlayerLabel.isHidden = true
+      self.startGameButton.isHidden = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
