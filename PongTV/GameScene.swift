@@ -34,6 +34,8 @@ var score = [Int]()
         border.friction = 0
         border.restitution = 1
         self.physicsBody = border
+     
+    
     }
     
     func StartGame() {
