@@ -29,8 +29,6 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>CrackedCode.ttf</string>
-		<string></string>
-		<string>CustomFont-Blacklisted.ttf</string>
 	</array>
 	<key>LSApplicationCategoryType</key>
 	<string></string>

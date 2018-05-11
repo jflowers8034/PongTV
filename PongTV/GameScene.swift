@@ -15,11 +15,10 @@ class GameScene: SKScene {
 var ball = SKSpriteNode()
 var leftPaddle = SKSpriteNode()
 var rightPaddle = SKSpriteNode()
-
-var score = [Int]()
-
-var labelLeft = SKLabelNode()
-var labelRight = SKLabelNode()
+var score = [Int] ()
+ 
+    
+    
     
     override func didMove(to view: SKView) {
         
