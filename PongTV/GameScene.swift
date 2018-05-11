@@ -28,6 +28,9 @@ var score = [Int] ()
         leftPaddle = self.childNode(withName: "leftPaddle") as! SKSpriteNode
         rightPaddle = self.childNode(withName: "rightPaddle") as! SKSpriteNode
         
+        labelLeft = self.childNode(withName: "labelLeft") as! SKLabelNode
+        labelRight = self.childNode(withName: "labelRight") as! SKLabelNode
+        
         ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
         
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
@@ -40,6 +43,8 @@ var score = [Int] ()
     
     func StartGame() {
         score = [0,0]
+        labelLeft.text = "\(score[0])"
+        labelRight.text = "\(score[1])"
     }
     
     func addScore(playerWhoScored: SKSpriteNode) {
@@ -56,7 +61,8 @@ var score = [Int] ()
             
              ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
         }
-        print(score)
+        labelLeft.text = "\(score[0])"
+        labelRight.text = "\(score[1])"
     }
     
     override func update(_ currentTime: TimeInterval) {
