@@ -81,10 +81,13 @@ var score = [Int] ()
       
         rightPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 0.3))
         
+        leftPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 0.0))
+
+        
         if ball.position.x <= leftPaddle.position.x - 60 {
             addScore(playerWhoScored: rightPaddle)
         }
-        else if ball.position.x >= rightPaddle.position.x + 65 {
+        else if ball.position.x >= rightPaddle.position.x + 60 {
             addScore(playerWhoScored: leftPaddle)
         }
      
