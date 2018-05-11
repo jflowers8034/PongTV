@@ -11,16 +11,24 @@ import GameplayKit
 
 
 class GameScene: SKScene {
+
+var labelLeft = SKLabelNode(text:"")
+var labelRight = SKLabelNode(text:"")
+
     
 var ball = SKSpriteNode()
 var leftPaddle = SKSpriteNode()
 var rightPaddle = SKSpriteNode()
 var score = [Int] ()
- 
+
+  
+    
     
     
     
     override func didMove(to view: SKView) {
+        
+
         
         StartGame()
         
@@ -30,6 +38,9 @@ var score = [Int] ()
         
         labelLeft = self.childNode(withName: "labelLeft") as! SKLabelNode
         labelRight = self.childNode(withName: "labelRight") as! SKLabelNode
+        
+        labelLeft.fontName = "crackedCode"
+        labelRight.fontName = "crackedCode"
         
         ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
         
@@ -61,6 +72,7 @@ var score = [Int] ()
             
              ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
         }
+      
         labelLeft.text = "\(score[0])"
         labelRight.text = "\(score[1])"
     }
