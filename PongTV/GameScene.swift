@@ -11,6 +11,7 @@ import GameplayKit
 
 
 class GameScene: SKScene {
+let sound = SKAction.playSoundFileNamed("tada.mp3", waitForCompletion: false)
 
 var labelLeft = SKLabelNode(text:"")
 var labelRight = SKLabelNode(text:"")
@@ -66,11 +67,13 @@ var score = [Int] ()
             score[0] += 1
             
              ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
+            run(sound)
         }
         else if playerWhoScored == rightPaddle {
             score[1] += 1
             
              ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+            run(sound)
         }
       
         labelLeft.text = "\(score[0])"
