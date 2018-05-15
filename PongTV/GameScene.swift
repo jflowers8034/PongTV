@@ -12,13 +12,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-var levelTimerLabel = SKLabelNode(fontNamed: "crackedCode")
-var levelTimerValue: Int = 500
-    
-   // didSet {
-//    levelTimerLabel.text = "Time Left: \(levelTimerValue"
-//    }
-//}
+let sound = SKAction.playSoundFileNamed("tada.mp3", waitForCompletion: false)
 
 var labelLeft = SKLabelNode(text:"")
 var labelRight = SKLabelNode(text:"")
