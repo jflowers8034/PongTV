@@ -11,6 +11,14 @@ import GameplayKit
 
 
 class GameScene: SKScene {
+    
+var levelTimerLabel = SKLabelNode(fontNamed: "crackedCode")
+var levelTimerValue: Int = 500
+    
+   // didSet {
+//    levelTimerLabel.text = "Time Left: \(levelTimerValue"
+//    }
+//}
 
 var labelLeft = SKLabelNode(text:"")
 var labelRight = SKLabelNode(text:"")
