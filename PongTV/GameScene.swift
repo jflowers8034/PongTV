@@ -18,6 +18,7 @@ let sound1 = SKAction.playSoundFileNamed("notagain.wav", waitForCompletion: fals
 var labelLeft = SKLabelNode(text:"")
 var labelRight = SKLabelNode(text:"")
 
+var winnerLabel = SKLabelNode(text: "")
     
 var ball = SKSpriteNode()
 var leftPaddle = SKSpriteNode()
