@@ -17,6 +17,7 @@ let sound = SKAction.playSoundFileNamed("tada.mp3", waitForCompletion: false)
 var labelLeft = SKLabelNode(text:"")
 var labelRight = SKLabelNode(text:"")
 
+var winnerLabel = SKLabelNode(text: "")
     
 var ball = SKSpriteNode()
 var leftPaddle = SKSpriteNode()
