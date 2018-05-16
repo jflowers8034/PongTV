@@ -19,10 +19,12 @@ class GameViewController: UIViewController {
     @IBOutlet weak var welcomePlayerLabel: UILabel!
     @IBOutlet weak var startGameButton: UIButton!
     
+    @IBOutlet weak var winnerLabel: UILabel!
     @IBAction func whenButtonPressed(_ sender: UIButton) {
       self.welcomePlayerLabel.isHidden = true
       self.startGameButton.isHidden = true
-        GameScene().applyImpulse()
+        
+        
         
     }
     override func viewDidLoad() {
@@ -38,6 +40,7 @@ class GameViewController: UIViewController {
             
         }
         
+        self.winnerLabel.isHidden = true
         
     
         
