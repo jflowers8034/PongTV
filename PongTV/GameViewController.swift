@@ -11,7 +11,9 @@ import SpriteKit
 import GameplayKit
 import AVFoundation
 
+
 class GameViewController: UIViewController {
+    
     var musicEffect: AVAudioPlayer = AVAudioPlayer()
 
     @IBOutlet weak var welcomePlayerLabel: UILabel!
@@ -35,6 +37,7 @@ class GameViewController: UIViewController {
         }
         catch {
             print(error)
+            
         }
         
         self.winnerLabel.isHidden = true
@@ -66,8 +69,11 @@ class GameViewController: UIViewController {
 
     @IBAction func startButton(_ sender: Any) {
         musicEffect.play()
+        
+        
     }
     
+   
     
     
     
