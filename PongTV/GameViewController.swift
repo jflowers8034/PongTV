@@ -11,7 +11,9 @@ import SpriteKit
 import GameplayKit
 import AVFoundation
 
+
 class GameViewController: UIViewController {
+    
     var musicEffect: AVAudioPlayer = AVAudioPlayer()
 
     @IBOutlet weak var welcomePlayerLabel: UILabel!
@@ -20,6 +22,8 @@ class GameViewController: UIViewController {
     @IBAction func whenButtonPressed(_ sender: UIButton) {
       self.welcomePlayerLabel.isHidden = true
       self.startGameButton.isHidden = true
+        GameScene().applyImpulse()
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +35,7 @@ class GameViewController: UIViewController {
         }
         catch {
             print(error)
+            
         }
         
         
@@ -61,8 +66,11 @@ class GameViewController: UIViewController {
 
     @IBAction func startButton(_ sender: Any) {
         musicEffect.play()
+        
+        
     }
     
+   
     
     
     

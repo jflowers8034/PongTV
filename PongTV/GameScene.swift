@@ -11,6 +11,7 @@ import GameplayKit
 
 
 class GameScene: SKScene {
+    
 let sound = SKAction.playSoundFileNamed("tada.mp3", waitForCompletion: false)
 
 var labelLeft = SKLabelNode(text:"")
@@ -22,16 +23,18 @@ var leftPaddle = SKSpriteNode()
 var rightPaddle = SKSpriteNode()
 var score = [Int] ()
 
-  
+    func applyImpulse() {
+        ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+    }
     
     
     
     
     override func didMove(to view: SKView) {
         
-
         
         StartGame()
+       
         
         ball = self.childNode(withName: "ball") as! SKSpriteNode
         leftPaddle = self.childNode(withName: "leftPaddle") as! SKSpriteNode
@@ -42,6 +45,7 @@ var score = [Int] ()
         
         labelLeft.fontName = "crackedCode"
         labelRight.fontName = "crackedCode"
+        
         
         ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
         
@@ -57,6 +61,7 @@ var score = [Int] ()
         score = [0,0]
         labelLeft.text = "\(score[0])"
         labelRight.text = "\(score[1])"
+        ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
     }
     
     func addScore(playerWhoScored: SKSpriteNode) {
@@ -66,13 +71,13 @@ var score = [Int] ()
         if playerWhoScored == leftPaddle {
             score[0] += 1
             
-             ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
+             ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
             run(sound)
         }
         else if playerWhoScored == rightPaddle {
             score[1] += 1
             
-             ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+             ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
             run(sound)
         }
       
@@ -80,11 +85,35 @@ var score = [Int] ()
         labelRight.text = "\(score[1])"
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let touch = touches.first!
+        
+        let location = touch.location(in: self)
+        
+        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.2))
+        
+    }
+    
+    
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let touch = touches.first!
+        
+        let location = touch.location(in: self)
+        
+        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.2))
+        
+    }
+    
+
+    
     override func update(_ currentTime: TimeInterval) {
       
         rightPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 0.3))
         
-        leftPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 0.0))
+
 
         
         if ball.position.x <= leftPaddle.position.x - 60 {
