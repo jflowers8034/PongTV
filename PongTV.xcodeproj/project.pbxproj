@@ -17,8 +17,6 @@
 		40C794CA20A35622000A494A /* Cracked Code.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40C794C920A35622000A494A /* Cracked Code.ttf */; };
 		686619BF209CC0AD0063223D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686619BE209CC0AD0063223D /* AVFoundation.framework */; };
 		68BC9EFC20AC8D4A00A75EB1 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68BC9EFB20AC8D4A00A75EB1 /* tada.mp3 */; };
-		68BC9EFE20AC937C00A75EB1 /* yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68BC9EFD20AC937B00A75EB1 /* yeah.mp3 */; };
-		68BC9F0020AC938C00A75EB1 /* notagain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 68BC9EFF20AC938C00A75EB1 /* notagain.wav */; };
 		68DF2B1720A2063E00237055 /* retro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68DF2B1620A2063E00237055 /* retro.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +33,8 @@
 		40C794C920A35622000A494A /* Cracked Code.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cracked Code.ttf"; path = "PongTV/Cracked Code.ttf"; sourceTree = "<group>"; };
 		686619BE209CC0AD0063223D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		68BC9EFB20AC8D4A00A75EB1 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
-		68BC9EFD20AC937B00A75EB1 /* yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yeah.mp3; sourceTree = "<group>"; };
-		68BC9EFF20AC938C00A75EB1 /* notagain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = notagain.wav; sourceTree = "<group>"; };
+		68BC9F0120AC95DF00A75EB1 /* yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yeah.mp3; path = /Users/amuho1246/Desktop/PongTV/PongTV/yeah.mp3; sourceTree = "<absolute>"; };
+		68BC9F0220AC95F700A75EB1 /* notagain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = notagain.wav; path = /Users/amuho1246/Desktop/PongTV/PongTV/notagain.wav; sourceTree = "<absolute>"; };
 		68DF2B1620A2063E00237055 /* retro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retro.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,8 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				68BC9EFB20AC8D4A00A75EB1 /* tada.mp3 */,
-				68BC9EFF20AC938C00A75EB1 /* notagain.wav */,
-				68BC9EFD20AC937B00A75EB1 /* yeah.mp3 */,
+				68BC9F0220AC95F700A75EB1 /* notagain.wav */,
+				68BC9F0120AC95DF00A75EB1 /* yeah.mp3 */,
 				1AA8A9B0209A1B7A00DD9742 /* AppDelegate.swift */,
 				1AA8A9B2209A1B7A00DD9742 /* GameScene.sks */,
 				1AA8A9B4209A1B7A00DD9742 /* Actions.sks */,
@@ -158,10 +156,8 @@
 				40C794CA20A35622000A494A /* Cracked Code.ttf in Resources */,
 				1AA8A9BC209A1B7A00DD9742 /* Main.storyboard in Resources */,
 				68DF2B1720A2063E00237055 /* retro.mp3 in Resources */,
-				68BC9F0020AC938C00A75EB1 /* notagain.wav in Resources */,
 				1AA8A9B3209A1B7A00DD9742 /* GameScene.sks in Resources */,
 				1AA8A9BE209A1B7E00DD9742 /* Assets.xcassets in Resources */,
-				68BC9EFE20AC937C00A75EB1 /* yeah.mp3 in Resources */,
 				1AA8A9B5209A1B7A00DD9742 /* Actions.sks in Resources */,
 				68BC9EFC20AC8D4A00A75EB1 /* tada.mp3 in Resources */,
 			);

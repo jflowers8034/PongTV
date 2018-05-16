@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/amuho1246/Desktop/PongTV/PongTV/yeah.mp3">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/amuho1246/Desktop/PongTV/PongTV/notagain.wav">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
