@@ -94,6 +94,14 @@ var score = [Int] ()
      
     }
     
+    func endGame() {
+        if score[0] == 20 {
+            ball.position = CGPoint(x: 0, y: 0)
+            ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+            
+        }
+    
     
     }
 
+}
