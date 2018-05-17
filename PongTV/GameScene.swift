@@ -12,11 +12,13 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-let sound = SKAction.playSoundFileNamed("tada.mp3", waitForCompletion: false)
-
+let sound = SKAction.playSoundFileNamed("yeah.mp3", waitForCompletion: false)
+let sound1 = SKAction.playSoundFileNamed("notagain.wav", waitForCompletion: false)
+    
 var labelLeft = SKLabelNode(text:"")
 var labelRight = SKLabelNode(text:"")
 
+var winnerLabel = SKLabelNode(text: "")
     
 var ball = SKSpriteNode()
 var leftPaddle = SKSpriteNode()
@@ -79,7 +81,7 @@ var score = [Int] ()
             score[1] += 1
             
              ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
-            run(sound)
+            run(sound1)
         }
       
         labelLeft.text = "\(score[0])"
@@ -126,6 +128,14 @@ var score = [Int] ()
      
     }
     
+    func endGame() {
+        if score[0] == 20 {
+            ball.position = CGPoint(x: 0, y: 0)
+            ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+            
+        }
+    
     
     }
 
+}

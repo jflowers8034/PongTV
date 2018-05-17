@@ -16,13 +16,15 @@ class GameViewController: UIViewController {
     
     var musicEffect: AVAudioPlayer = AVAudioPlayer()
 
-    @IBOutlet weak var welcomePlayerLabel: UILabel!
     @IBOutlet weak var startGameButton: UIButton!
     
+    @IBOutlet weak var welcomePlayerLabel: UILabel!
+    @IBOutlet weak var winnerLabel: UILabel!
     @IBAction func whenButtonPressed(_ sender: UIButton) {
       self.welcomePlayerLabel.isHidden = true
       self.startGameButton.isHidden = true
-        GameScene().applyImpulse()
+        
+        
         
     }
     override func viewDidLoad() {
@@ -70,8 +72,6 @@ class GameViewController: UIViewController {
         
     }
     
-   
     
-    
-    
+
 }
