@@ -53,7 +53,8 @@ var score = [Int] ()
         border.friction = 0
         border.restitution = 1
         self.physicsBody = border
-     
+        border.collisionBitMask = 2
+        border.contactTestBitMask = 2
     
     }
     
@@ -91,7 +92,7 @@ var score = [Int] ()
         
         let location = touch.location(in: self)
         
-        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.2))
+        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.35))
         
     }
     
@@ -103,7 +104,7 @@ var score = [Int] ()
         
         let location = touch.location(in: self)
         
-        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.2))
+        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.35))
         
     }
     
@@ -111,7 +112,7 @@ var score = [Int] ()
     
     override func update(_ currentTime: TimeInterval) {
       
-        rightPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 0.3))
+        rightPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 0.4))
         
 
 
