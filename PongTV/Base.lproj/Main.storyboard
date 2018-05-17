@@ -28,15 +28,16 @@
                                 <color key="backgroundColor" red="0.7929290926" green="0.7929290926" blue="0.7929290926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="58"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="1-800-START-HOTLINE-PONG">
+                                <state key="normal" title="START GAME">
                                     <color key="titleShadowColor" red="0.48951062817258884" green="0.48951062817258884" blue="0.48951062817258884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="startButton:" destination="499-42-d0g" eventType="primaryActionTriggered" id="5jJ-J8-QGV"/>
                                     <action selector="whenButtonPressed:" destination="499-42-d0g" eventType="primaryActionTriggered" id="a6m-7E-Pi2"/>
+                                    <action selector="whenPressed:" destination="weF-Pa-zaM" eventType="primaryActionTriggered" id="cEG-kX-U26"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME PLAYER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a59-Jh-Udy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PONG TV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a59-Jh-Udy">
                                 <rect key="frame" x="357" y="382" width="1182" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="107"/>

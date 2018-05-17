@@ -32,6 +32,7 @@ var score = [Int] ()
     
     
     
+    
     override func didMove(to view: SKView) {
         
         
@@ -45,18 +46,15 @@ var score = [Int] ()
         labelLeft = self.childNode(withName: "labelLeft") as! SKLabelNode
         labelRight = self.childNode(withName: "labelRight") as! SKLabelNode
         
-        labelLeft.fontName = "crackedCode"
-        labelRight.fontName = "crackedCode"
-        
         
         ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+        
         
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
         border.friction = 0
         border.restitution = 1
         self.physicsBody = border
-        border.collisionBitMask = 2
-        border.contactTestBitMask = 2
+        
     
     }
     
@@ -64,7 +62,7 @@ var score = [Int] ()
         score = [0,0]
         labelLeft.text = "\(score[0])"
         labelRight.text = "\(score[1])"
-        ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+        
     }
     
     func addScore(playerWhoScored: SKSpriteNode) {
@@ -86,6 +84,8 @@ var score = [Int] ()
       
         labelLeft.text = "\(score[0])"
         labelRight.text = "\(score[1])"
+        
+    
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -111,6 +111,19 @@ var score = [Int] ()
     }
     
 
+    //non-working concept to get the game to reset after a player reaches 20 points.
+    
+//    func EndGame() {
+//        if score[0] == 20 {
+//            ball.position = CGPoint(x: 0, y: 0)
+//            ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+//
+//        }
+//        else if score[0] == 20 {
+//            ball.position = CGPoint(x: 0, y: 0)
+//            ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
+//        }
+//    }
     
     override func update(_ currentTime: TimeInterval) {
       
@@ -125,17 +138,11 @@ var score = [Int] ()
         else if ball.position.x >= rightPaddle.position.x + 60 {
             addScore(playerWhoScored: leftPaddle)
         }
+        
+        
      
     }
     
-    func endGame() {
-        if score[0] == 20 {
-            ball.position = CGPoint(x: 0, y: 0)
-            ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
-            
-        }
     
     
     }
-
-}
