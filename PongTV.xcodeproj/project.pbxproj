@@ -18,6 +18,7 @@
 		686619BF209CC0AD0063223D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686619BE209CC0AD0063223D /* AVFoundation.framework */; };
 		68BC9EFC20AC8D4A00A75EB1 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68BC9EFB20AC8D4A00A75EB1 /* tada.mp3 */; };
 		68DF2B1720A2063E00237055 /* retro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68DF2B1620A2063E00237055 /* retro.mp3 */; };
+		68F07FFB20ADE449001CD24A /* retro2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68F07FFA20ADE449001CD24A /* retro2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,8 @@
 		40C794C920A35622000A494A /* Cracked Code.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cracked Code.ttf"; path = "PongTV/Cracked Code.ttf"; sourceTree = "<group>"; };
 		686619BE209CC0AD0063223D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		68BC9EFB20AC8D4A00A75EB1 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
-		68BC9F0120AC95DF00A75EB1 /* yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yeah.mp3; path = /Users/amuho1246/Desktop/PongTV/PongTV/yeah.mp3; sourceTree = "<absolute>"; };
-		68BC9F0220AC95F700A75EB1 /* notagain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = notagain.wav; path = /Users/amuho1246/Desktop/PongTV/PongTV/notagain.wav; sourceTree = "<absolute>"; };
 		68DF2B1620A2063E00237055 /* retro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retro.mp3; sourceTree = "<group>"; };
+		68F07FFA20ADE449001CD24A /* retro2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retro2.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				68BC9EFB20AC8D4A00A75EB1 /* tada.mp3 */,
-				68BC9F0220AC95F700A75EB1 /* notagain.wav */,
-				68BC9F0120AC95DF00A75EB1 /* yeah.mp3 */,
 				1AA8A9B0209A1B7A00DD9742 /* AppDelegate.swift */,
 				1AA8A9B2209A1B7A00DD9742 /* GameScene.sks */,
 				1AA8A9B4209A1B7A00DD9742 /* Actions.sks */,
 				1AA8A9B6209A1B7A00DD9742 /* GameScene.swift */,
 				1AA8A9B8209A1B7A00DD9742 /* GameViewController.swift */,
 				68DF2B1620A2063E00237055 /* retro.mp3 */,
+				68F07FFA20ADE449001CD24A /* retro2.mp3 */,
 				1AA8A9BA209A1B7A00DD9742 /* Main.storyboard */,
 				1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */,
 				1AA8A9BF209A1B7E00DD9742 /* Info.plist */,
@@ -159,6 +158,7 @@
 				1AA8A9B3209A1B7A00DD9742 /* GameScene.sks in Resources */,
 				1AA8A9BE209A1B7E00DD9742 /* Assets.xcassets in Resources */,
 				1AA8A9B5209A1B7A00DD9742 /* Actions.sks in Resources */,
+				68F07FFB20ADE449001CD24A /* retro2.mp3 in Resources */,
 				68BC9EFC20AC8D4A00A75EB1 /* tada.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
