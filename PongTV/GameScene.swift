@@ -12,8 +12,8 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-let sound = SKAction.playSoundFileNamed("yeah.mp3", waitForCompletion: false)
-let sound1 = SKAction.playSoundFileNamed("notagain.wav", waitForCompletion: false)
+let sound = SKAction.playSoundFileNamed("tada.mp3", waitForCompletion: false)
+
     
 var labelLeft = SKLabelNode(text:"")
 var labelRight = SKLabelNode(text:"")
@@ -79,7 +79,7 @@ var score = [Int] ()
             score[1] += 1
             
              ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
-            run(sound1)
+            run(sound)
         }
       
         labelLeft.text = "\(score[0])"

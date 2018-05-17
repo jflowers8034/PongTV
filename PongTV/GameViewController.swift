@@ -30,7 +30,7 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let musicFile = Bundle.main.path(forResource: "retro", ofType: ".mp3")
+        let musicFile = Bundle.main.path(forResource: "retro2", ofType: ".mp3")
         
         do {
             try musicEffect = AVAudioPlayer(contentsOf: URL (fileURLWithPath: musicFile!))

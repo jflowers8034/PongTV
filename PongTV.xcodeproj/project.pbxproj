@@ -17,6 +17,7 @@
 		40C794CA20A35622000A494A /* Cracked Code.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40C794C920A35622000A494A /* Cracked Code.ttf */; };
 		686619BF209CC0AD0063223D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686619BE209CC0AD0063223D /* AVFoundation.framework */; };
 		68DF2B1720A2063E00237055 /* retro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68DF2B1620A2063E00237055 /* retro.mp3 */; };
+		68F07FFB20ADE449001CD24A /* retro2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68F07FFA20ADE449001CD24A /* retro2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		40C794C920A35622000A494A /* Cracked Code.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cracked Code.ttf"; path = "PongTV/Cracked Code.ttf"; sourceTree = "<group>"; };
 		686619BE209CC0AD0063223D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		68DF2B1620A2063E00237055 /* retro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retro.mp3; sourceTree = "<group>"; };
+		68F07FFA20ADE449001CD24A /* retro2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retro2.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				1AA8A9B6209A1B7A00DD9742 /* GameScene.swift */,
 				1AA8A9B8209A1B7A00DD9742 /* GameViewController.swift */,
 				68DF2B1620A2063E00237055 /* retro.mp3 */,
+				68F07FFA20ADE449001CD24A /* retro2.mp3 */,
 				1AA8A9BA209A1B7A00DD9742 /* Main.storyboard */,
 				1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */,
 				1AA8A9BF209A1B7E00DD9742 /* Info.plist */,
