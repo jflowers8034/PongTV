@@ -25,12 +25,12 @@ var leftPaddle = SKSpriteNode()
 var rightPaddle = SKSpriteNode()
 var score = [Int] ()
 
+    
+    
+    
     func applyImpulse() {
         ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
     }
-    
-    
-    
     
     
     override func didMove(to view: SKView) {
@@ -47,7 +47,7 @@ var score = [Int] ()
         labelRight = self.childNode(withName: "labelRight") as! SKLabelNode
         
         
-        ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
+        
         
         
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
@@ -94,7 +94,7 @@ var score = [Int] ()
         
         let location = touch.location(in: self)
         
-        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.35))
+        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.3))
         
     }
     
@@ -106,7 +106,7 @@ var score = [Int] ()
         
         let location = touch.location(in: self)
         
-        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.35))
+        leftPaddle.run(SKAction.moveTo(y: location.y, duration: 0.3))
         
     }
     
@@ -119,10 +119,10 @@ var score = [Int] ()
 
 
         
-        if ball.position.x <= leftPaddle.position.x - 60 {
+        if ball.position.x <= leftPaddle.position.x - 55 {
             addScore(playerWhoScored: rightPaddle)
         }
-        else if ball.position.x >= rightPaddle.position.x + 60 {
+        else if ball.position.x >= rightPaddle.position.x + 55 {
             addScore(playerWhoScored: leftPaddle)
         }
         
