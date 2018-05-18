@@ -14,7 +14,7 @@ import AVFoundation
 
 class GameViewController: UIViewController {
     
-    var musicEffect: AVAudioPlayer = AVAudioPlayer()
+   // var gameBackgroundMusic: SKAudioNode!
 
     @IBOutlet weak var startGameButton: UIButton!
     
@@ -32,6 +32,7 @@ class GameViewController: UIViewController {
         
        
         
+     //   gameBackgroundMusic = SKAudioNode(fileNamed:"HotlineBling.extention")
         
         
         

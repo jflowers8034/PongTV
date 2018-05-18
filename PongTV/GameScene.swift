@@ -12,7 +12,8 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-let sound = SKAction.playSoundFileNamed("tada.mp3", waitForCompletion: false)
+let sound = SKAction.playSoundFileNamed("HotlineBling.mp3", waitForCompletion: true)
+var gameBackgroundMusic: SKAudioNode!
 
     
 var labelLeft = SKLabelNode(text:"")
@@ -37,7 +38,10 @@ var score = [Int] ()
         
         
         StartGame()
-       
+        
+        run(sound)
+
+        gameBackgroundMusic = SKAudioNode(fileNamed:"HotlineBling.extention")
         
         ball = self.childNode(withName: "ball") as! SKSpriteNode
         leftPaddle = self.childNode(withName: "leftPaddle") as! SKSpriteNode
@@ -73,13 +77,11 @@ var score = [Int] ()
             score[0] += 1
             
              ball.physicsBody?.applyImpulse(CGVector(dx: 20, dy: 20))
-            run(sound)
         }
         else if playerWhoScored == rightPaddle {
             score[1] += 1
             
              ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
-            run(sound)
         }
       
         labelLeft.text = "\(score[0])"
