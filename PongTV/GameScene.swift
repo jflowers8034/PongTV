@@ -114,7 +114,7 @@ var score = [Int] ()
     
     override func update(_ currentTime: TimeInterval) {
       
-        rightPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 0.4))
+        rightPaddle.run(SKAction.moveTo(y: ball.position.y, duration: 0.9))
         
 
 
