@@ -32,9 +32,7 @@
                                     <color key="titleShadowColor" red="0.48951062817258884" green="0.48951062817258884" blue="0.48951062817258884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButton:" destination="499-42-d0g" eventType="primaryActionTriggered" id="5jJ-J8-QGV"/>
                                     <action selector="whenButtonPressed:" destination="499-42-d0g" eventType="primaryActionTriggered" id="a6m-7E-Pi2"/>
-                                    <action selector="whenPressed:" destination="weF-Pa-zaM" eventType="primaryActionTriggered" id="cEG-kX-U26"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PONG TV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a59-Jh-Udy">

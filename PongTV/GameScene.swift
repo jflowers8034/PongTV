@@ -111,19 +111,6 @@ var score = [Int] ()
     }
     
 
-    //non-working concept to get the game to reset after a player reaches 20 points.
-    
-//    func EndGame() {
-//        if score[0] == 20 {
-//            ball.position = CGPoint(x: 0, y: 0)
-//            ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
-//
-//        }
-//        else if score[0] == 20 {
-//            ball.position = CGPoint(x: 0, y: 0)
-//            ball.physicsBody?.velocity = CGVector(dx: 0, dy: 0)
-//        }
-//    }
     
     override func update(_ currentTime: TimeInterval) {
       
