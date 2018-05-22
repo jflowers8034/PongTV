@@ -14,7 +14,6 @@
 		1AA8A9B9209A1B7A00DD9742 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8A9B8209A1B7A00DD9742 /* GameViewController.swift */; };
 		1AA8A9BC209A1B7A00DD9742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8A9BA209A1B7A00DD9742 /* Main.storyboard */; };
 		1AA8A9BE209A1B7E00DD9742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */; };
-		4026F0BA20AF370A002E2B9C /* HotlineBling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4026F0B920AF370A002E2B9C /* HotlineBling.mp3 */; };
 		40C794CA20A35622000A494A /* Cracked Code.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40C794C920A35622000A494A /* Cracked Code.ttf */; };
 		686619BF209CC0AD0063223D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686619BE209CC0AD0063223D /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		1AA8A9BB209A1B7A00DD9742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AA8A9BF209A1B7E00DD9742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4026F0B920AF370A002E2B9C /* HotlineBling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = HotlineBling.mp3; path = ../../../Downloads/HotlineBling.mp3; sourceTree = "<group>"; };
 		40C794C920A35622000A494A /* Cracked Code.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cracked Code.ttf"; path = "PongTV/Cracked Code.ttf"; sourceTree = "<group>"; };
 		686619BE209CC0AD0063223D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -80,7 +78,6 @@
 				1AA8A9B4209A1B7A00DD9742 /* Actions.sks */,
 				1AA8A9B6209A1B7A00DD9742 /* GameScene.swift */,
 				1AA8A9B8209A1B7A00DD9742 /* GameViewController.swift */,
-				4026F0B920AF370A002E2B9C /* HotlineBling.mp3 */,
 				1AA8A9BA209A1B7A00DD9742 /* Main.storyboard */,
 				1AA8A9BD209A1B7E00DD9742 /* Assets.xcassets */,
 				1AA8A9BF209A1B7E00DD9742 /* Info.plist */,
@@ -159,7 +156,6 @@
 				1AA8A9B3209A1B7A00DD9742 /* GameScene.sks in Resources */,
 				1AA8A9BE209A1B7E00DD9742 /* Assets.xcassets in Resources */,
 				1AA8A9B5209A1B7A00DD9742 /* Actions.sks in Resources */,
-				4026F0BA20AF370A002E2B9C /* HotlineBling.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
